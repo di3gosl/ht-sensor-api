@@ -1,0 +1,27 @@
+{
+  "name": "ht-sensor-api",
+  "version": "1.0.0",
+  "description": "Humidity/Temperature Sensors API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/di3gosl/ht-sensor-api.git"
+  },
+  "author": "Diego Salazar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/di3gosl/ht-sensor-api/issues"
+  },
+  "homepage": "https://github.com/di3gosl/ht-sensor-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
