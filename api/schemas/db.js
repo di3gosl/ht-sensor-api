@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const DB_URI = 'mongodb+srv://di3gosl:11101ella@clustertest-c95jc.mongodb.net/ht_sensor';
+require('dotenv').config();
 
-mongoose.connect(DB_URI, {
+mongoose.connect(process.env.MONGODB_ATLAS_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
