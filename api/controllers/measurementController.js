@@ -1,9 +1,9 @@
-require('./../schemas/db');
+require('./../models/db');
 const mongoose = require('mongoose');
-const sensorSchema = require('./../schemas/sensorSchema');
-const measurementSchema = require('./../schemas/measurementSchema');
-const Sensor = mongoose.connection.model('Sensor', sensorSchema);
-const Measurement = mongoose.connection.model('Measurement', measurementSchema);
+const sensorModel = require('./../models/sensorModel');
+const measurementModel = require('./../models/measurementModel');
+const Sensor = mongoose.connection.model('Sensor', sensorModel);
+const Measurement = mongoose.connection.model('Measurement', measurementModel);
 
 const findSensor = async (id) => {
     try {
